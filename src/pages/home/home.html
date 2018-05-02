@@ -9,6 +9,10 @@
 <ion-content>
 
 
+    <ion-refresher (ionRefresh)="recargar_ejercicios($event)">
+    <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
     <ion-card *ngFor="let animal of animales">
        <img [src]="animal.imagen">
           <ion-card-content>
@@ -16,7 +20,7 @@
              <h2>{{animal.nombre}}</h2>
            </ion-card-title>
            <p>
-             Hello
+             
            </p>
       </ion-card-content>
     </ion-card>

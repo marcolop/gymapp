@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-// import { NavController } from 'ionic-angular';
-// import { ANIMALES } from '../../data/data.animales';
 import { EJERCICIOS } from '../../data/data.exercises';
 import { Ejercicios } from '../../interfaces/ejercicios.interface';
-
-// import { Refresher,Reorder } from 'ionic-angular';
+import { Refresher } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -15,6 +12,16 @@ import { Ejercicios } from '../../interfaces/ejercicios.interface';
     animales:Ejercicios[] = [];
 
     constructor() {
-      this.animales = EJERCICIOS.splice(0);
+       this.animales = EJERCICIOS.slice(0);
     }
+
+    // recarga de ejercios cuando se actualizan nuevos
+    recargar_ejercicios( refresher:Refresher) {
+       console.log('inicio del refresh');
+       setTimeout( () => {
+           console.log('termino el refresh');
+            this.animales = EJERCICIOS.slice(0);
+            refresher.complete();
+     },1500)
+   }
 }

@@ -1,4 +1,3 @@
-
 export const ANIMALES = [
       {
         nombre: "Caballo",

@@ -1,4 +1,3 @@
-
 export const EJERCICIOS = [
       {
         nombre: "Ejercicio 1",
@@ -55,14 +54,14 @@ export const EJERCICIOS = [
         descripcion: "30 segundos en posicion plancha",
         duracion: 20,
         reproduciendo: false
-      }
+      },
       {
         nombre: "Ejercicio 9",
         imagen: "assets/Exercises/ex9.png",
         descripcion: "10 ejercicios de sierra",
         duracion: 20,
         reproduciendo: false
-      }
+      },
       {
         nombre: "Ejercicio 10",
         imagen: "assets/Exercises/ex1.png",
@@ -118,14 +117,14 @@ export const EJERCICIOS = [
         descripcion: "30 segundos en posicion plancha",
         duracion: 20,
         reproduciendo: false
-      }
+      },
       {
         nombre: "Ejercicio 18",
         imagen: "assets/Exercises/ex9.png",
         descripcion: "10 ejercicios de sierra",
         duracion: 20,
         reproduciendo: false
-      }
+      },
       {
         nombre: "Ejercicio 19",
         imagen: "assets/Exercises/ex1.png",
@@ -181,7 +180,7 @@ export const EJERCICIOS = [
         descripcion: "30 segundos en posicion plancha",
         duracion: 20,
         reproduciendo: false
-      }
+      },
       {
         nombre: "Ejercicio 27",
         imagen: "assets/Exercises/ex9.png",
